@@ -1,3 +1,4 @@
+{% load static %}
 <html>
     <head> 
         <title> accounts </title>
@@ -11,5 +12,7 @@
             <h4>rule : {{account.rule}} </h4>
             <h5>suspended : {{account.suspended}} </h5>
         {%endfor%}
+
+        <img src="{% static "mysecondapp/img/test.jpeg" %}"></img>
     </body>
 </html>
