@@ -12,6 +12,11 @@
             <h3>age : {{account.password}} </h3>
             <h4>rule : {{account.rule}} </h4>
             <h5>suspended : {{account.suspended}} </h5>
+            {%if account.suspended == True%}
+            <h6>user is suspended</h6>
+            {%else%}
+            <h6>user is not suspended</h6>
+            {%endif%}
         {%endfor%}
 
         <img src="{% static "mysecondapp/img/test.jpeg" %}"></img>
